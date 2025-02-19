@@ -1,11 +1,11 @@
-# JSON to Relational Database Conversion
+# REPORT to Relational Database Conversion
 
-## Approach to Converting JSON to Relational
+## Approach to Converting REPORT to Relational
 
 1. Identify entities by analyzing file structures and finding logical groupings
 2. Normalize data to reduce redundancy while maintaining data integrity
 3. Define relationships between entities
-4. Map JSON fields to relational tables and columns
+4. Map REPORT fields to relational tables and columns
 5. Optimize structure for performance and maintainability
 
 ## Logical Data Model
@@ -15,16 +15,16 @@
 *Logical Data Model for Health Management System*
 *(Click to open diagram)*
 
-## Mapping JSON Files to Relational Tables
+## Mapping REPORT Files to Relational Tables
 
-*JSON to Relational Database Mapping*
+*REPORT to Relational Database Mapping*
 *(Click to open document)*
 
 ## Explanation of the Conversion Approach
 
 ### 1. Entity Identification and Structure
 
-I identified the key entities in the system by analyzing the JSON file structures. The main observation was that there are parallel structures for credit healths and regular healths, which I've consolidated into a single relational model. This approach:
+I identified the key entities in the system by analyzing the REPORT file structures. The main observation was that there are parallel structures for credit healths and regular healths, which I've consolidated into a single relational model. This approach:
 
 1. Eliminates redundancy: Rather than having separate tables for credit and debit healths, I've used a product_type field to distinguish them
 2. Maintains data integrity: Relationships between entities are preserved through foreign keys
@@ -50,11 +50,11 @@ I applied normalization principles to reduce data redundancy:
 2. Denormalization considerations: While mostly normalized, some redundant data might be kept for performance (like health_type in the health table)
 3. Index planning: Primary keys and foreign keys would be indexed for performance
 
-### 5. Handling JSON-Specific Features
+### 5. Handling REPORT-Specific Features
 
-1. Field naming: Converted JSON's kebab-case to relational snake_case
-2. Data type mapping: Mapped JSON field types to appropriate SQL data types
-3. Redefines handling: Addressed JSON's redefines by choosing the most appropriate representation for relational storage
+1. Field naming: Converted REPORT's kebab-case to relational snake_case
+2. Data type mapping: Mapped REPORT field types to appropriate SQL data types
+3. Redefines handling: Addressed REPORT's redefines by choosing the most appropriate representation for relational storage
 
 ## Benefits of This Approach
 
@@ -65,11 +65,11 @@ I applied normalization principles to reduce data redundancy:
 5. Maintenance: Easier to maintain with clear entity boundaries
 6. Reporting: Simplified queries across the entire health system
 
-This relational model provides a solid foundation for building a modern database system while preserving all the functionality and data relationships from the original JSON files.
+This relational model provides a solid foundation for building a modern database system while preserving all the functionality and data relationships from the original REPORT files.
 
 ---
 
-## JSON to Relational Database Mapping
+## REPORT to Relational Database Mapping
 
 ### 1. ACCOUNT Table
 **Sources:** credithealth-features.txt, health-features.txt
