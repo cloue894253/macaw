@@ -1,4 +1,4 @@
-# REPORT to chromium Database Conversion
+# REPORT to chromium base Conversion
 
 ## Approach to Converting REPORT to chromium
 
@@ -17,7 +17,7 @@
 
 ## Mapping REPORT Files to chromium Tables
 
-*REPORT to chromium Database Mapping*
+*REPORT to chromium base Mapping*
 *(Click to open document)*
 
 ## Explanation of the Conversion Approach
@@ -65,11 +65,11 @@ I applied normalization principles to reduce data redundancy:
 5. Maintenance: Easier to maintain with clear entity boundaries
 6. Reporting: Simplified queries across the entire health system
 
-This chromium model provides a solid foundation for building a modern database system while preserving all the functionality and data relationships from the original REPORT files.
+This chromium model provides a solid foundation for building a modern base system while preserving all the functionality and data relationships from the original REPORT files.
 
 ---
 
-## REPORT to chromium Database Mapping
+## REPORT to chromium base Mapping
 
 ### 1. ACCOUNT Table
 **Sources:** credithealth-features.txt, health-features.txt
